@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
+
+body {
+  background-image: linear-gradient(
+    55deg,
+    hsl(147deg 20% 20%) 0%,
+    hsl(149deg 37% 10%) 30%,
+    hsl(0deg 0% 0%) 100%
+  );
+}
+
+.header {
+  margin-top: 20px;
+}
+h1 {
+  font-family: "Azeret Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: greenyellow;
+  text-shadow: 0 0 5px greenyellow;
+  letter-spacing: 1px;
+  font-size: 40px;
+  text-align: center;
+}
+span {
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#board {
+  height: 540px;
+  width: 630px;
+  background-color: rgb(27, 86, 163);
+  border-radius: 10px;
+  border: 10px solid white;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tile {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 5px;
+}
+.red-piece {
+  background-color: red;
+}
+.yellow-piece {
+  background-color: yellow;
+}
+#winner {
+  color: white;
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 0 0 10px cyan;
+  font-variation-settings: "wdth" 100;
+}
